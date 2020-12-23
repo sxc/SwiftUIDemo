@@ -18,22 +18,38 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             Text(text)
-            Text("Hello, world!")
                 .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                 .fontWeight(.heavy)
                 .rotationEffect(.degrees(rotation))
                 .animation(.easeInOut(duration: 5))
+                .foregroundColor(colors[colorIndex])
+            Spacer()
+            Divider()
 
             Slider(value: $rotation, in: 0 ... 360, step: 0.1)
+                .padding()
+            
             TextField("Enter text here", text: $text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+//            Picker(selection: $colorIndex, label: Text("Color")) {
+//                ForEach (0 ..< colornames.count) { color in
+//                    Text(colornames[color])
+//                        .foregroundColor(colors[color])
+//                    }
+//                }
+            
             Picker(selection: $colorIndex, label: Text("Color")) {
-                ForEach (0 ..< colornames.count) { color in
-                    Text(colornames[color])
-                        .foregroundColor(colors[color])
+                ForEach (0 ..< colornames.count) {
+                    Text(colornames[$0])
+                        .foregroundColor(colors[$0])
                     }
                 }
+                .padding()
+            
         }
            
     }
