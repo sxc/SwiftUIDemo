@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var timerData: TimerData = TimerData()
+    
     var colors: [Color] = [.black, .red, .green, .blue]
     var colornames = ["Black", "Red", "Green", "Blue"]
     
@@ -34,13 +37,6 @@ struct ContentView: View {
             TextField("Enter text here", text: $text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            
-//            Picker(selection: $colorIndex, label: Text("Color")) {
-//                ForEach (0 ..< colornames.count) { color in
-//                    Text(colornames[color])
-//                        .foregroundColor(colors[color])
-//                    }
-//                }
             
             Picker(selection: $colorIndex, label: Text("Color")) {
                 ForEach (0 ..< colornames.count) {

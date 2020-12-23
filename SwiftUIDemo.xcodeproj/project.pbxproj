@@ -13,6 +13,8 @@
 		345C325B2592E5E7006A2780 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C32462592E5E6006A2780 /* ContentView.swift */; };
 		345C325C2592E5E7006A2780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345C32472592E5E7006A2780 /* Assets.xcassets */; };
 		345C325D2592E5E7006A2780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345C32472592E5E7006A2780 /* Assets.xcassets */; };
+		345C32692592ED71006A2780 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C32682592ED71006A2780 /* TimerData.swift */; };
+		345C326A2592ED71006A2780 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C32682592ED71006A2780 /* TimerData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		345C32542592E5E7006A2780 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345C32562592E5E7006A2780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345C32572592E5E7006A2780 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		345C32682592ED71006A2780 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				345C32452592E5E6006A2780 /* SwiftUIDemoApp.swift */,
 				345C32462592E5E6006A2780 /* ContentView.swift */,
 				345C32472592E5E7006A2780 /* Assets.xcassets */,
+				345C32682592ED71006A2780 /* TimerData.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -189,6 +193,7 @@
 			files = (
 				345C325A2592E5E7006A2780 /* ContentView.swift in Sources */,
 				345C32582592E5E7006A2780 /* SwiftUIDemoApp.swift in Sources */,
+				345C32692592ED71006A2780 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +203,7 @@
 			files = (
 				345C325B2592E5E7006A2780 /* ContentView.swift in Sources */,
 				345C32592592E5E7006A2780 /* SwiftUIDemoApp.swift in Sources */,
+				345C326A2592ED71006A2780 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
